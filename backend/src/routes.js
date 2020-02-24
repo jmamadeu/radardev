@@ -3,11 +3,11 @@ const { Router } = require("express");
 const routes = Router();
 
 const DevController = require("./controllers/DevController");
-const SeachController = require("./controllers/SeachController");
+const SearchController = require("./controllers/SearchController");
 
 routes.get("/devs", DevController.index);
 routes.post("/devs", DevController.store);
 
-routes.get("/search", SeachController.index);
+routes.get("/search", SearchController.index);
 
 module.exports = routes;
