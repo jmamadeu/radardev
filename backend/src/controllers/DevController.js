@@ -34,6 +34,8 @@ module.exports = {
         techs: techsArray,
         location
       });
+
+      // Filtrar as conexões quee stão há...
     }
 
     return res.json(dev);
